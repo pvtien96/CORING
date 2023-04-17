@@ -1,0 +1,1 @@
+python main/cifar10.py --arch googlenet --pretrain_dir checkpoint/cifar/cifar10/googlenet.pt --criterion Euclide_dis [0.3]+[0.6]*2+[0.7]*5+[0.8]*2 --shot 1

@@ -1,0 +1,1 @@
+python main/cifar10.py --arch vgg_16_bn --pretrain_dir checkpoint/cifar/cifar10/vgg_16_bn.pt --criterion Euclide_dis [0.5]*2+[0.65]*5+[0.8]*5 --shot 1

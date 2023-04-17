@@ -1,0 +1,1 @@
+python main/cifar10.py --arch mobilenet_v2 --pretrain_dir checkpoint/cifar/cifar10/mobilenet_v2.pt --weight_decay 0.001 --criterion VBD_dis --compress_rate [0.]+[0.1]+[0.25]*2+[0.25]*2+[0.3]*2 --shot 1

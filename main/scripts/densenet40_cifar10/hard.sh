@@ -1,0 +1,1 @@
+python main/cifar10.py --arch densenet_40 --pretrain_dir checkpoint/cifar/cifar10/densenet_40.pt --criterion cosine_sim [0.]+[0.3]*12+[0.1]+[0.3]*12+[0.1]+[0.3]*12 --shot 1

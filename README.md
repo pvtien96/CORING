@@ -2,6 +2,8 @@
 
 Nous présentons une nouvelle méthode d'élagage des filtres pour les réseaux de neurones, appelée CORING (pour effiCient tensOr decomposition-based filteR prunING en anglais). L'approche proposée maintient l'aspect multidimensionnel des filtres grâce à l'utilisation de décompositions tensorielles. Notre approche permet de mesurer la similarité entre les filtres de manière plus efficace et plus précise que les méthodes traditionnelles qui utilisent des versions vectorisées ou matricisées des filtres. Avec cette approche, nous pouvons effectuer l'élagage des filtres plus efficacement en gardant l'essentiel de l'information en utilisant des décompositions de tenseurs sur les filtres. Les expériences menées sur différentes architectures prouvent l'efficacité de CORING.
 
+![](figs/Framework.png)
+
 ## Installation
 1. OS: This repository is developed on Debian GNU/Linux 10. However, we tested it and it also runs well on Ubuntu 18.04 + or Windows 10+.
 2. Main requirements:
@@ -37,10 +39,13 @@ Nous présentons une nouvelle méthode d'élagage des filtres pour les réseaux 
     cd ..
     ```
 2. Baseline models:
-- Download baseline models [here](), put them to `./checkpoint`.
+- Download baseline models [here](https://drive.google.com/drive/folders/1UfDCJ2x-Tp-4m51AfuTie_gV2N-YNYTl?usp=sharing), put them to `./checkpoint`.
 
 ## Verification our results
-- All results are available [here]().
+
+![](figs/Performance.png)
+
+- All results are available [here](https://drive.google.com/drive/folders/1UfDCJ2x-Tp-4m51AfuTie_gV2N-YNYTl?usp=sharing).
 - Log files of all experiments are attached, they contain all information of the pruning or fine tuning process, as well as model architecture, numbers of parameters/FLOPs and top-1/top-5 accuracy.
     | No | Dataset  |    Model    | Pruning level | Top-1 (%) | #Param. (↓%) |   FLOPs (↓%)  |
     |:--:|----------|:-----------:|:-------------:|:---------:|:------------:|:-------------:|
